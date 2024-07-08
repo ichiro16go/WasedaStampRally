@@ -12,6 +12,7 @@ export const Home=()=>{
                 <p className="text-xl">人</p>
             </section>
                 <p className="text-right mt-3">次の景品解放まであと: 10人</p>
+            {/* 以下のsectionはSendPageと共通なのでまとめる必要あり */}
             <section className="mt-11">
                 <h2 className="text-2xl">景品一覧</h2>
                 <ul className="w-full overflow-y-scroll max-h-64 bg-gray-500 divide-y divide-black rounded">
