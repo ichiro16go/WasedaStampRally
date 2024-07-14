@@ -1,6 +1,7 @@
 import { LuArrowRightLeft } from "react-icons/lu";
 import GiftList from "./components/GiftList";
 
+
 export const Send=()=>{
     return(
         <div>
