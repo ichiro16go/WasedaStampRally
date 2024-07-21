@@ -20,13 +20,16 @@ export const QrScanner = () => {
 
   return (
     <div>
-      <h2>QRコードスキャナー</h2>
-      <QrReader
-        delay={300}
-        onError={handleError}
-        onScan={handleScan}
-        style={{ width: '100%' }}
-      />
+      <h2 className='font-semibold text-center'>QRコードを読み取る</h2>
+      <div className='max-w-lg mx-auto'>
+        <QrReader
+          constraints={{ facingMode: 'environment' }}
+          delay={300}
+          onError={handleError}
+          onScan={handleScan}
+          style={{ width: '100%' }}
+        />
+      </div>
       {result && <p>Scanned QR Code: {result}</p>}
     </div>
   );
